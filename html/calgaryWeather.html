@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fetch api</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Weather API Fetch</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Profile Page</a>
+        <a href="../html/resume.html" >Resume</a>
+        <a href="../html/projects.html">Hobbies and Projects</a>
+        <a href="http://www.exes.life">exes.life</a>
+    </nav>
+    <main>
+    <section>    
+            <p id="output"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="coloum">
+            <h3>Contact Info</h3>
+            <p>E Mail: pmacdonald15@gmail.com</p>
+            <p>p.macdonald038@mybvc.ca</p>
+            <p>Phone: 403-975-5053</p>
+        </div>
+
+        <div class="coloum">
+            <h3>Links</h3>
+            <p><a href="https://www.linkedin.com/in/patrick-macdonald-231640285/">LinkedIn</a></p>
+            <p><a href="https://github.com/Pmacdon15?tab=repositories">GitHub</a></p>
+            <p><a href="http://www.exes.life">exes.life</a></p>
+        </div>
+
+        <div class="coloum">
+            <h3>Address</h3>
+            <p><a style="margin:0px;" href="../html/calgaryWeather.html">City: Calgary</a></p>
+            <p>Province: Alberta</p>
+            <p>Country: Canada</p>
+        </div>
+    </footer>
+    <script>
+        const fetchData = fetch('https://api.openweathermap.org/data/3.0/onecall?lat=51.05&lon=-114.05&exclude=hour&units=metric&appid=701d754e68e6906fbd840c2193cdd2b8');
+        console.log(fetchData);    
+     
+        fetchData.then(response => response.json()) // Parse the JSON data
+        .then(data => {
+            console.log(data.current.temp); // You can check the data structure in the console
+            
+            const currentTemperature = data.current.temp;
+            const description = data.current.weather[0].main;
+            const output = `<h2>Current Data:</h2><p>Current Temp: ${currentTemperature} °C</p><p>Currently: ${description}</p>`;
+            document.getElementById('output').innerHTML = output;
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            document.getElementById('output').innerText = 'Error fetching data.';
+        });
+    </script>
+</body>
+</html>
