@@ -68,12 +68,47 @@ section {
 .floatRight{
     float: right;    
 } 
+.displayPhoto {
+    display: inline-block;
+    margin: 1%;
+    
+}
+
+.displayPhoto > img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.displayPhoto > img:hover {
+    transform: scale(1.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    overflow: hidden;
+
+}
 .displayImg{
     float: left;
     margin-right: 2%;
     width: 250px;
     height:auto;
     border-radius: 5px;
+}
+
+.drone{
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    
+}
+.drone >div {
+    margin:1%;
+    display: flex;
+    justify-content: center;  
+     
+    
 }
 .certs{
     width:90%;
@@ -97,12 +132,16 @@ p {
     text-indent: 2%;
 }
 
-    
+video{
+    width:350px;
+    height:auto;
+    margin: 1%;
+}
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* overflow: auto; */
     padding: 1%;
     border-radius: 5px;
     /* margin-top: 0%; */
