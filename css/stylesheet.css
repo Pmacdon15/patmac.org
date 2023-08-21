@@ -65,9 +65,9 @@ section {
     display: block;
     margin: 0 auto;
 }
-/* .floatRight{
+.floatRight{
     float: right;    
-} */
+} 
 .displayImg{
     float: left;
     margin-right: 2%;
