@@ -1,3 +1,4 @@
+<!-- Todo Add serverside to code so this is safe. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,7 @@
     <nav>
         <a href="../index.html">Profile Page</a>
         <a href="../html/resume.html" >Resume</a>
+        <a href="../html/certificates.html">Certificates</a>
         <a href="../html/projects.html">Hobbies and Projects</a>
         <a href="http://www.exes.life">exes.life</a>
     </nav>
@@ -37,13 +39,13 @@
 
         <div class="coloum">
             <h3>Address</h3>
-            <p><a style="margin:0px;" href="../html/calgaryWeather.html">City: Calgary</a></p>
+            <p>City: Calgary</p>
             <p>Province: Alberta</p>
             <p>Country: Canada</p>
         </div>
     </footer>
     <script>
-        const fetchData = fetch('https://api.openweathermap.org/data/3.0/onecall?lat=51.05&lon=-114.05&exclude=hour&units=metric&appid=701d754e68e6906fbd840c2193cdd2b8');
+        /// Add this code server side with the key const fetchData = fetch('https://api.openweathermap.org/data/3.0/onecall?lat=51.05&lon=-114.05&exclude=hour&units=metric&appid={API KEY}');
         console.log(fetchData);    
      
         fetchData.then(response => response.json()) // Parse the JSON data
