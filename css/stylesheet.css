@@ -87,7 +87,6 @@ section {
     transform: scale(1.5); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     overflow: hidden;
-
 }
 .displayImg{
     float: left;
@@ -96,26 +95,20 @@ section {
     height:auto;
     border-radius: 5px;
 }
- 
-
- .drone{
+.drone{
     overflow: auto;
     /* display: flex;
-    flex-wrap: wrap;  */
-    
+    flex-wrap: wrap;  */    
 } 
 .drone >div {
     margin:1%;
     display: flex;
-    justify-content: center;  
-         
+    justify-content: center; 
 }
 .certs{
     width:90%;
     height: auto;       
 }
-
-
 section img {
     /* float: left;
     margin-right: 20px;
@@ -176,13 +169,22 @@ footer > div{
     }
      .drone .center {
         display: unset;
-         justify-content: center;
+        justify-content: center;
         align-items: center; 
     } 
     .drone  {
-        /* display: flex; */
+        display: flex; 
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+    }
+    .drone .displayPhoto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .drone .displayPhoto > img {
+        margin: 0;
     }
 }
 
@@ -205,9 +207,23 @@ footer > div{
     section:not(:last-of-type) {   
         margin-bottom: 2%;    
     }
-    .drone .center {
+     .drone .center {
         display: unset;
-        /* justify-content: unset;
-        align-items: unset; */
+        justify-content: center;
+        align-items: center; 
     } 
+    .drone  {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .drone .displayPhoto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .drone .displayPhoto > img {
+        margin: 0;
+    }
 }
