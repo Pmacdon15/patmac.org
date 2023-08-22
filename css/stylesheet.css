@@ -96,13 +96,18 @@ section {
     height:auto;
     border-radius: 5px;
 }
+/* .drone .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  */
 
-.drone{
+ .drone{
     overflow: auto;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    flex-wrap: wrap; 
     
-}
+} 
 .drone >div {
     margin:1%;
     display: flex;
@@ -174,6 +179,11 @@ footer > div{
     section:not(:last-of-type) {   
         margin-bottom: 2%;    
     }
+     .drone .center {
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    } 
 }
 
 @media only screen and (orientation: portrait) {
@@ -195,4 +205,9 @@ footer > div{
     section:not(:last-of-type) {   
         margin-bottom: 2%;    
     }
+    .drone .center {
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    } 
 }
