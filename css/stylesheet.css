@@ -230,4 +230,8 @@ footer > div{
     .drone .displayPhoto > img {
         margin: 0;
     }
+
+    footer .coloum {
+    flex: 1;
+    }
 }
