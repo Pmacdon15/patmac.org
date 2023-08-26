@@ -213,7 +213,7 @@ footer  p{
     } 
 }
 
-@media only screen and (orientation: portrait) {
+/* @media only screen and (orientation: portrait) {
     header{
         margin-bottom: 2%;       
     }
@@ -271,4 +271,4 @@ footer  p{
         margin-right: auto;
         padding: 2%;       
     } 
-}
+} */
