@@ -16,14 +16,100 @@
         <a href="../html/transcript.html">Transcript</a>
         <a href="../html/certificates.html">Certificates</a>
         <a href="../html/projects.html">Hobbies and Projects</a>
-        <a href="http://www.exes.life">exes.life</a>
+        <a href="http://www.patchat.ca">PatChat.ca</a>
     </nav>
     <main>
+        <setion>
+            <h2>
+                patchat.ca
+            </h2>
+            <p>
+                PatChat is a web app that i made for fun. The website<a href="http://www.patchat.ca">PatChat.ca</a>
+                is a chatroom, that I host on my unbuntu server on my raspberry pi 4. I used express and socket.io to make the 
+                chatroom. I used pm2 to run the server in the background. I used apache and a vitural host point to the desired port. Apache all handles my ssl certificate.
+                I used certbot to get the ssl certificate. I used a reverse proxy to point to my ip address. I used port forwarding
+                to point all traffic on my ip address to my raspberry pi. Apache does the rest.
+            </p>
+            <h4>Requierments:</h4>
+            <ul>
+                <li>
+                    Raspberry Pi 4 running Unbunt Server
+                </li>
+                <li>
+                    A computer
+                </li>
+                <li>
+                    Your perfered IDE
+                </li>
+                <li>
+                    Knowledge of Node.js, Express, Socket.io, Apache, and SSL certificates.
+                </li>
+            </ul>
+            <h4>
+                Process I followed:
+            </h2>
+            <ul>
+                <li>
+                    Set up a Unbuntu server on a Raspberry Pi 4.
+                </li>
+                <li>
+                    Set up port forwarding on router which will reserve an IP address for the Pi.
+                </li>
+                <li>
+                    Install Node.js and Express on the Pi.
+                </li>
+                <li>
+                    Write Express server with Socket.io
+                </li>
+                <li>
+                    Write client side js code to connect to server.
+                </li>
+                <li>
+                    Write client side js code to send and recieve messages.
+                </li>
+                <li>
+                    Write client side js code to display messages.  
+                </li>
+                <li>
+                    Write client side js code to display users.
+                </li> 
+                <li>
+                    Write a simple html page to display the chatroom.
+                </li>
+                <li>
+                    Create or push a commit to a Github repository.
+                </li>
+                <li>
+                    Clone the repository from GitHub to the Pi.
+                </li>
+                <li>
+                    Download and set up PM2 so server can run in the background
+                </li>
+                <li>
+                    Download and set up Apache
+                </li>
+                <li>
+                    Set up a virtual host profile so that you can host more than 
+                    one domain name with one ip.
+                </li>
+                <li>
+                    Usert bot to set up an SSL certificate for your site.
+                </li>
+                <p>Creating the chat room Seemed to go well afterI found a video breaking it down to its simplest 
+                components. Another layer of complexity was added when I allowed Apache to handle my ssl certificates 
+                as opposed to setting up the express server as an HTTPS server to begin with.I was able to get the site 
+                to work properly allowing Apache to handle the SSL certificatesalthough this method does generateone 
+                console error on the client sidedue toa connection failing at first.This does not affect the functionality of
+                 the chat room and I am still proud of the product I've produced.
+                </p>
+                
+
+
+        </setion>
         <section>
             <h2>ALOA(A little offensive appliance)</h2>
             <img class="displayImg" alt="raspberry-pi" src="../images/aloa.jpg">
-            <h4>About</h4>
-            
+            <h4>About</h4>            
                 <ul>
                     <li>
                         P4wnP1 A.L.O.A. by MaMe82 is a framework which turns a Rapsberry Pi 
