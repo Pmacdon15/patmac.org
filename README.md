@@ -12,7 +12,7 @@ This is a client-side website that showcases Patrick MacDonald's resume, transcr
 
 ## Description
 
-This website is a portfolio that showcases Patrick MacDonald's skills and experience. It includes his resume, transcript, certificates, and projects. It also includes a chat website that he has made.
+This website is a portfolio that showcases my skills and experience. It includes his resume, transcript, certificates, and projects. It also includes a chat website that I has made.
 
 ## Installation
 
