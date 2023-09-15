@@ -22,199 +22,62 @@
     <main>
         <section>
             <h2>
-                patchat.ca
+                www.patchat.ca
             </h2>
+            <img class="displayImg" alt="patchat" src="../images/patchat.png">
             <p>
-                PatChat is a web app that i made for fun. The website<a href="http://www.patchat.ca">PatChat.ca</a>
-                is a chatroom, that I host on my unbuntu server on my raspberry pi 4. I used express and socket.io to make the 
-                chatroom. I used pm2 to run the server in the background. I used apache and a vitural host point to the desired port. Apache all handles my ssl certificate.
-                I used certbot to get the ssl certificate. I used a reverse proxy to point to my ip address. I used port forwarding
-                to point all traffic on my ip address to my raspberry pi. Apache does the rest.
+                PatChat is a web app that I made for fun. The website<a href="http://www.patchat.ca">PatChat.ca</a>
+                is a chatroom, that I host on my unbuntu server on my Raspberry Pi 4. I used Express and Socket.io to make the 
+                chatroom. I used pm2 to run the server in the background. I used apache and a vitural host point to the desired port. 
+                Apache all handles my SSL certificate. I used Certbot to get the SSL certificate. I also used port forwarding to point 
+                all traffic on my ip address ports 80 and 443 to my Raspberry Pi and Apache does the rest.
             </p>
-            <h4>Requierments:</h4>
-            <ul>
-                <li>
-                    Raspberry Pi 4 running Unbunt Server
-                </li>
-                <li>
-                    A computer
-                </li>
-                <li>
-                    Your perfered IDE
-                </li>
-                <li>
-                    Knowledge of Node.js, Express, Socket.io, Apache, and SSL certificates.
-                </li>
-            </ul>
-            <h4>
-                Process I followed:
-            </h4>
-            <ul>
-                <li>
-                    Set up a Unbuntu server on a Raspberry Pi 4.
-                </li>
-                <li>
-                    Set up port forwarding on router which will reserve an IP address for the Pi.
-                </li>
-                <li>
-                    Install Node.js and Express on the Pi.
-                </li>
-                <li>
-                    Write Express server with Socket.io
-                </li>
-                <li>
-                    Write client side js code to connect to server.
-                </li>
-                <li>
-                    Write client side js code to send and recieve messages.
-                </li>
-                <li>
-                    Write client side js code to display messages.  
-                </li>
-                <li>
-                    Write client side js code to display users.
-                </li> 
-                <li>
-                    Write a simple html page to display the chatroom.
-                </li>
-                <li>
-                    Create or push a commit to a Github repository.
-                </li>
-                <li>
-                    Clone the repository from GitHub to the Pi.
-                </li>
-                <li>
-                    Download and set up PM2 so server can run in the background
-                </li>
-                <li>
-                    Download and set up Apache
-                </li>
-                <li>
-                    Set up a virtual host profile so that you can host more than 
-                    one domain name with one ip.
-                </li>
-                <li>
-                    Usert bot to set up an SSL certificate for your site.
-                </li>
-            </ul>
+                        
             <p>
-                Creating the chat room Seemed to go well afterI found a video breaking it down to its simplest 
+                Creating the chat room seemed to go well after I found a video breaking it down to its simplest 
                 components. Another layer of complexity was added when I allowed Apache to handle my ssl certificates 
-                as opposed to setting up the express server as an HTTPS server to begin with.I was able to get the site 
-                to work properly allowing Apache to handle the SSL certificatesalthough this method does generateone 
-                console error on the client sidedue toa connection failing at first.This does not affect the functionality of
-                the chat room and I am still proud of the product I've produced.
+                as opposed to setting up the express server as an HTTPS server to begin with. I was able to get the site 
+                to work properly allowing Apache to handle the SSL certificatesalthough this method does generate one 
+                console error on the client side due to a connection failing at first. If you run it as an http server
+                the error is gone. Either way this does not affect the functionality of
+                the chat room and I am proud of the product I've produced.
             </p>     
         </section>
         <section>
-            <h2>ALOA(A little offensive appliance)</h2>
+            <h2>ALOA(A Little Offensive Appliance)</h2>
             <img class="displayImg" alt="raspberry-pi" src="../images/aloa.jpg">
-            <h4>About</h4>            
-                <ul>
-                    <li>
-                        P4wnP1 A.L.O.A. by MaMe82 is a framework which turns a Rapsberry Pi 
-                        Zero W into a flexible, low-cost platform for pentesting, 
-                        red teaming and physical engagements ... or into "A Little Offensive
-                        Appliance".
-                    </li>
-                    <li>It's main super power is the ability To mimic an HID device
-                        AKA inject keystrokes and mouse movements into a computer.
-                    </li>
-                    <li>
-                        It's able to emulate a mass storage device. When used with 
-                        the HID injection you are able to launch any number of exes you 
-                        have preloaded onto the device.
-                  </li>
-                  <li> I can not overstate the power of HID injections, After opening a terminal 
-                        on a computer you can do anything you want.
-                  </li>                    
-                </ul>
-                <h4>Requierments</h4>
-                <ul>
-                    <li>
-                        Raspberry Pi Zero W
-                    </li>
-                    <li>
-                        Micro SD card
-                    </li>
-                    <li>
-                        Micro USB to USB cable or Usb board for Pi.
-                    </li>
-                    <li>
-                        A computer to set up the Pi.    
-                    </li>
-                </ul>
-                <p>
+            <p>                
+                P4wnP1 A.L.O.A. by MaMe82 is a framework which turns a Rapsberry Pi Zero W into a flexible, low-cost platform for 
+                pentesting, red teaming and physical engagements ... or into "A Little Offensive Appliance". It's main super power is 
+                the ability To mimic an HID device AKA inject keystrokes and mouse movements into a computer. Also it is able to 
+                emulate a mass storage device. When used with the HID injection you are able to launch any number of exes you 
+                have preloaded onto the device. I can not overstate the power of HID injections, After opening a terminal 
+                on a computer you can do anything you want.
+            </p>            
+            <p>
                 This project has made me aware of so many vulnerabilities most personal computers. I'm very interested in cyber security
-                and would love to use this device to further my education on the subject.
+                and would love to use this device to further my education on the subject. At the very least it is a fun educational toy/tool.
+                At about $40 to get started, I found it an affordable way to learn about vulnerabilities in personal computers. 
                 <br><br>If you are instrested follow this link to the GitHub repository<a href="https://github.com/RoganDawes/P4wnP1_aloa"><u>page.</u></a>
                 <br>If you are intrested in buying a Raspberry-Pi 0W please use this<a href="https://amzn.to/3ONppvl"><u>Link.</u></a>
                 <br>If you are intrested in buying a Raspberry-Pi 0W USB board please use this<a href="https://amzn.to/3QOIgca"><u>Link.</u></a>
                 <br>If you would like to buy an sd card for your Raspberry-Pi please use this<a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
-                </p>
+            </p>
         </section>
         <section>
-            <h2>Unbutu Server as an os for a Raspberry-Pi 4</h2>
-            <p>This Allows me to have many Directories with different types of 
-                frameworks such as Apache, express, pytho or Rubyy.
-            </h4>
-            <h4>Process I followed:</h4>
-            <ul>
-                <li>
-                    Download the Unbutu Server image from the official website. 
-                    Look for the ARM 64 bit image.
-                </li>
-                <li>
-                    Download the Raspberry Pi Imager from the official website. IF you dont already have it.
-                </li>
-                <li>
-                    Use the Raspberry Pi Imager to flash the Unbutu Server image to the SD card. 
-                    There is a gears menu that allows you to set the wifi and ssh, username and password up.
-                </li>                
-                <li>
-                    Insert the SD card into the Raspberry Pi.
-                </li>
-                <li>
-                    Connect the Raspberry Pi to a monitor, keyboard, ethernet cable(if you havnt sent up the wifi in the imager).
-                </li>
-                <li>
-                    Power on the Raspberry Pi.
-                </li>
-                <li>
-                    Let the imager start up, when finished log in with the user name and
-                    password you set up in the imager.
-                </li>
-                <li>
-                    Run the command sudo apt update && sudo apt upgrade.
-                </li>
-                <li>
-                    Run the command sudo git -version to see if git is installed.
-                </li>
-                <li>
-                    Downloand and set up your fravoite frame works and clone your favorite repositories.
-                </li>
-                <il>
-                    I also install pm2 to make running servers in the back ground easy.
-                </il>
-            </ul>
-            <h4>Requierments:</h4>
-            <ul>
-                <li>
-                    Raspberry Pi 4
-                </li>
-                <li>
-                    Micro SD card
-                </li>
-                <li>
-                    A computer to set up the Pi.    
-                </li>
-            </ul>
+            <h2>Unbutu Server as an OS for a Raspberry Pi 4</h2>
+            <img class="displayImg" alt="Unbuntu" src="../images/unbuntu.png">
+            <p>This allows me to have many directories with different types of frameworks and servers such as Apache, Express, 
+                Python or Rubyy. I also get to experince Linux as an os well hosting any number of servers or services. It will 
+                also help me learn the command line and how to use it. I am looking forward to learning more about Linux and web 
+                servers.
+
+            </p>
+            
             <p>
-                I have been using Unbutu server as my main os as an experiment. I have found it to be very stable and easy to use.
-                and I have been able to set up many different types of servers on it. I have been able to set up apache, 
-                express, python and ruby servers. I use pm2 to run the servers in the background. I have also been able to set up
-                an Express Downloads and uploads server. I have been able to download and upload files to the server from anywhere.
-                To do this port forwarding must be set up.
+                Unbuntu server is very powerful and a great addition to any home network especially if you want to self host many web 
+                services. I am very impressed a Raspberry Pi 4 can run Unbuntu server and host Multiple websites and applications at 
+                the same time.
                 <br><br>If you are intressted in setting up Unbutu Server on a Raspberry Pi follow this link to a guide<a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview"><u>page.</u></a>
                 <br>If you are intrested in buying a Raspberry-Pi 4 please use this<a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a>
                 <br>If you would like to buy a case for your Raspberry-Pi 4 please use this<a href="https://amzn.to/3OVIJqd"><u>Link.</u></a>
@@ -222,163 +85,51 @@
             </p>
         </section>
         <section>
-            <h2>Apache 2 web server on a Raspberry Pi W0</h2>                
-            <h4>Process I followed:</h4>
-            <ul>
-                <li>
-                    Set up a web server on a Raspberry Pi Zero W. 
-                <li>
-                    Set up apache 2 as the web server software.
-                </li>
-                </li>
-                <li>
-                    Set up a static IP address for the Pi.
-                </li>
-                <li>
-                    Set up a domain name for the Pi.
-                </li>
-                <li>
-                    Set up port forwarding on my router.
-                </li>
-                <li>
-                    Set up a dynamic DNS service.
-                </li>
-                <li>
-                    Clone the repository from GitHub to the Pi.
-                </li>
-                <li>
-                    (Optional)Set up a virtual host profile so that you can host more than 
-                    one domain name with one ip.
-                </li>
-                <li>
-                    (Optional)Set up a SSL certificate for your sites.
-                </li>                
-            </ul>
-            <h4>Requierments:</h4>
-            <ul>
-                <li>
-                    Raspberry Pi Zero W
-                </li>
-                <li>
-                    Micro SD card
-                </li>
-                <li>
-                    Micro USB to USB cable or Usb board for Pi.
-                </li>
-                <li>
-                    A computer to set up the Pi.    
-                </li>
-            </ul>
+            <h2>Apache 2 Web Server</h2>                
+            <img class="displayImg" alt="Apache" src="../images/apache.png">
             <p>
-                This website is hosted on the Pi right now. This was a fun project and quick
-                to set up. I am looking forward to setting up a more complex web server in the 
-                future. I know a bit of Node.js but it is Incompatible with Apache 2. I will
-                have to learn python or php to make the websites more complicated.<br><br>If you are 
-                intressted in setting up a web server on a Pi follow this link to a guide<a href="https://pimylifeup.com/raspberry-pi-apache/#:~:text=1%20Before%20we%20install%20Apache%20to%20our%20Raspberry,our%20Raspberry%20Pi%2C%20we%20now%20have%20an%20"><u>page.</u></a>
-                <br>If you are intrested in buying a Raspberry-Pi 0W please use this <a href="https://amzn.to/3ONppvl"><u>Link.</u></a>
-                <br>If you are intrested in buying a Raspberry-Pi 0W USB board please use this <a href="https://amzn.to/3QOIgca"><u>Link.</u></a> 
-                <br>If you would like to buy an sd card for your Raspberry-Pi please use this<a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
+                This website is hosted on Apache on a Raspberry Pi 4 right now. This was a fun project and 
+                quick to set up. What i like about Apache is that it is able to act as a reverse proxy. Basicly you set up a file called
+                a vitural host and point it to the desired port. Then you set up port forwarding on your router to point to the ip address.
+                Using this method not only can I serve websites from cirtin directories but I can also serve different websites from different
+                ports. Allowing me to host as many different types of servers, but also frameworks. Apache is such a powerful tool when it comes to
+                web hosting.I am looking forward to learning more about Apache and web servers.                 
             </p>
         </section>
         <section>
             <h2>
-                Express server on a Raspberry Pi 4
+                Express Server
             </h2>
-            <h4>Process I followed:</h4>
-            <ul>
-                <li>
-                    Decide what operation system to use.
-                </li>
-                <li>
-                    Set up port forwarding on router which will reserve an IP address for the Pi.
-                </li>
-                <li>
-                    Install Node.js and Express on the Pi.
-                </li>
-                <li>
-                    Write a simple Express server.
-                </li>
-                <li>
-                    Clone the repository from GitHub to the Pi.
-                </li>
-            </ul>
-            <h4>Requierments:</h4>
-            <ul>
-                <li>
-                    Raspberry Pi 4
-                </li>
-                <li>
-                    Micro SD card
-                </li>
-                <li>
-                    A computer to set up the Pi.    
-                </li>
-            </ul>
+            <img class="displayImg" alt="Express" src="../images/express.png">
             <p>
-                The way I have my Express server set up, I can access it from anywhere in the world.
-                I am able to download and upload files to the server. At a later point in time I
-                may have it serve some web pages. I am looking forward to learning more about Node.js 
-                and Express. I am also looking forward to learning more about web development.
-                <br>
-                <br>If you are intressted in buying a Raspberry-Pi 4 please use this<a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a>
-                <br>If you would like to buy a case for your Raspberry-Pi 4 please use this<a href="https://amzn.to/3OVIJqd"><u>Link.</u></a>
-                <br>If you would like to buy an sd card for your Raspberry-Pi 4 please use this<a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
-
+                Express is a web framework for Node.js. It is used for designing and building web applications quickly and easily. 
+                It is a flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+                So far I was able to set up a downloads and uploads server which I am ables to download files from  and also 
+                able to upload files from. I have also used Sock.io with an Express Server to beale to share content with everyone 
+                connected. From what I can tell the possibilities are endless with Express. I'm glad I was able to get some experince with 
+                Express in the classroom so I was able to ask many questions.             
             </p>
                     
         </section>
         <section>
             <h2>Kali Linux on a Rassberry Pi 4</h2>
-            <h4>Process I followed:</h4>
-            <ul>
-                <li>
-                    Download the Kali Linux image from the official website. Look for the ARM 32 bit image.
-                </li>
-                <li>
-                    Download the Raspberry Pi Imager from the official website.
-                </li>
-                <li>
-                    Use the Raspberry Pi Imager to flash the Kali Linux image to the SD card.
-                </li>
-                <li>
-                    Insert the SD card into the Raspberry Pi.
-                </li>
-                <li>
-                    Connect the Raspberry Pi to a monitor, keyboard, and mouse and ethernet cable.
-                </li>
-                <li>
-                    Power on the Raspberry Pi.
-                </li>
-                <li>
-                    Log in with the default username and password, kali, kali.
-                </li>
-            </ul>
-            <h4>Requierments:</h4>
-            <ul>
-                <li>
-                    Raspberry Pi 4
-                </li>
-                <li>
-                    Micro SD card
-                </li>
-                <li>
-                    A computer to set up the Pi.    
-                </li>
-            </ul>
+            <img class="displayImg" alt="Kali Linux" src="../images/kali.png">            
             <p>
-                Kali Linux is a Debian based Linux distribution that is used for penetration testing.
-                Cyber security is a field that I am very intrested in. I have been using Kali Linux to learn
-                about cyber security. Kali Linux is a very powerful tool and I am looking forward to learning more
-                about it. I am also looking forward to learning more about cyber security and hoping to get a 
-                job in the field. 
-                I may even take the post deploma program at Bow Valley College after I finish my current program software
-                development.
-                <br><br>If you are intressted in setting up Kali Linux on a Raspberry Pi follow this link to a guide<a href="https://www.kali.org/docs/arm/kali-linux-raspberry-pi/"><u>page.</u></a>
+                Kali Linux is a Debian based Linux distribution that is used for penetration testing. It is maintained and funded by Offensive 
+                Security Ltd. Alot of the features have been patched, and Security features have been added to prevent some of the attacks.
+                There is alot that does work and is super neat. I have plently more to go through and learn. One thing I have learned is 
+                have strong passwords and use a password manager so you can have even stronger passwords. I have also learned that there are 
+                many vulnerabilities in personal computers and something as simple as clicking on a link could open your computer or phone up 
+                to an attacker.
+            </p>
+            <p>
+                Im glad there is a low cost platform like the Raspberry Pi 4 to Kali and other Linux OS's. After my experince with Kalia
+                I may even take the post deploma program at Bow Valley College after I finish my current program software development.
+                <br><br>If you are intressted in setting up Kali Linux on a Raspberry Pi follow this link to a guide<a href="https://www.kali.org/docs/arm/raspberry-pi-4/"><u>page.</u></a>
                 <br>You can download Kali Linux from this<a href="https://www.kali.org/get-kali/#kali-arm"><u>page.</u></a>
                 <br>If you are intrested in buying a Raspberry-Pi 4 please use this<a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a>
                 <br>If you would like to buy a case for your Raspberry-Pi 4 please use this<a href="https://amzn.to/3OVIJqd"><u>Link.</u></a>
                 <br>If you would like to buy an sd card for your Raspberry-Pi 4 please use this<a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
-
             </p>
         </section>
     </main>
