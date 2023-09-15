@@ -8,7 +8,6 @@ This is a client-side website that showcases Patrick MacDonald's resume, transcr
 
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
 
 ## Description
 
