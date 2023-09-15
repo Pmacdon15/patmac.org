@@ -1,5 +1,5 @@
 # patmac.org
-A Profile, Resume, and projects page
+A Profile, projects, Resume, Transcript and Certs
 # Patrick MacDonald's Portfolio Website
 
 This is a client-side website that showcases Patrick MacDonald's resume, transcript, certificates, projects, and a chat website he has made.
@@ -8,13 +8,10 @@ This is a client-side website that showcases Patrick MacDonald's resume, transcr
 
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
-This website is a portfolio that showcases Patrick MacDonald's skills and experience. It includes his resume, transcript, certificates, and projects. It also includes a chat website that he has made.
+This website is a portfolio that showcases my skills and experience. It includes his resume, transcript, certificates, and projects. It also includes a chat website that I has made.
 
 ## Installation
 
