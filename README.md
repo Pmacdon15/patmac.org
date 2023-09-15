@@ -1,5 +1,5 @@
 # patmac.org
-A Profile, Resume, and projects page
+A Profile, projects, Resume, Transcript and Certs
 # Patrick MacDonald's Portfolio Website
 
 This is a client-side website that showcases Patrick MacDonald's resume, transcript, certificates, projects, and a chat website he has made.
