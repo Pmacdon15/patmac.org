@@ -79,7 +79,12 @@ section {
     background-color: #c5d5cb;
     box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.302);
 }
-
+img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+video {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 .displayCerts img {
     display: block;
     margin: 0 auto;
