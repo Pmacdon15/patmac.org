@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <title>Patrick MacDonald</title>
-    <link rel="stylesheet" href="css/stylesheet.css">    
-</head>
-<body>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
     <header>
-        <h1>Patrick MacDonald</h1>
+      <h1>Patrick MacDonald</h1>
     </header>
-    <nav>
+    <!-- <nav>
         <a href="index.html">Profile Page</a>
         <a href="../html/projects.html">Projects</a>
         <a href="../html/resume.html" >Resume</a>
@@ -19,68 +41,139 @@
         <a href="../html/hobbies.html">Hobbies</a>
         <a href="http://www.patchat.ca">PatChat.ca</a>
         
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Profile<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/transcript.html">Transcript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/certificates.html">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/hobbies.html">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.patchat.ca">PatChat.ca</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <main>
-        <section>
-            <h2>A little bit about my self</h2>
-            <img class="displayImg" src="images/limoDriver.jpg" alt="Limo Driver" >
-            <p>Hello and good day, My name is Patrick MacDonald. I'm making this site to aid in acquiring a job in the tech industry.
-                I will start by explaining about my first career and how I got intrested in Software Development. I started my driving 
-                career when I was 22 years old. I had a string of hard jobs for little pay and I was looking for a change. At the time 
-                I was young and very outgoing and believed I could conquer the world. So with that attitude I started my career as a 
-                truck driver becuase I thought it would be fun to drive large trucks(it was).                 
-            </p>
-            <img class="displayImg" src="images/truckDriver.jpg" alt="Truck Driver">
-            <p>
-                While being proud of the career I built I was also very tired of it. Although I had a fairly good wage, I was unable to
-                get a head. I was always living pay check to pay check not able to save very much each month. I would also get stuck 
-                at work when something like a tire would blow up or a truck would break down. I would have to wait for a mechanic to come then 
-                having to ask a family friend to pick up my step daughter from school. Also being outside in the elements was not fun.                 
-                I know some people have it worse and being outside for an hour or so is not that bad but I 
-                thought there had to be another way.
-            </p>            
-           <p>
-                That's when I started an introspection and asked myself what is it I want to do with my life.Then I remembered how much I 
-                loved programming in high school and how it made me think and feel. I decided that I would get my GED and apply for software 
-                developmentAt Bow Valley College. It took me about a month to get my GED and after that I applied for the program and was 
-                accepted but placed on a wait list. In the mean time I took a few classes on udemy just to make sure that software development 
-                was a proper fit for me and to my surprise I loved it. January rolled around and I was able to start my classesat Bow Valley. 
-                This brings us to now where I am now entering my 3rd termand looking for an internship or some sort of part time jobin the software 
-                development.
-           </p>
-        </section>
+      <section>
+        <h2>A little bit about my self</h2>
+        <img class="displayImg" src="images/limoDriver.jpg" alt="Limo Driver" />
+        <p>
+          Hello and good day, My name is Patrick MacDonald. I'm making this site
+          to aid in acquiring a job in the tech industry. I will start by
+          explaining about my first career and how I got interested in Software
+          Development. I started my driving career when I was 22 years old. I
+          had a string of hard jobs for little pay and I was looking for a
+          change. At the time I was young and very outgoing and believed I could
+          conquer the world. So with that attitude I started my career as a
+          truck driver because I thought it would be fun to drive large
+          trucks(it was).
+        </p>
+        <img
+          class="displayImg"
+          src="images/truckDriver.jpg"
+          alt="Truck Driver"
+        />
+        <p>
+          While being proud of the career I built I was also very tired of it.
+          Although I had a fairly good wage, I was unable to get a head. I was
+          always living pay check to pay check not able to save very much each
+          month. I would also get stuck at work when something like a tire would
+          blow up or a truck would break down. I would have to wait for a
+          mechanic to come then having to ask a family friend to pick up my step
+          daughter from school. Also being outside in the elements was not fun.
+          I know some people have it worse and being outside for an hour or so
+          is not that bad but I thought there had to be another way.
+        </p>
+        <p>
+          That's when I started an introspection and asked myself what is it I
+          want to do with my life.Then I remembered how much I loved programming
+          in high school and how it made me think and feel. I decided that I
+          would get my GED and apply for software developmentAt Bow Valley
+          College. It took me about a month to get my GED and after that I
+          applied for the program and was accepted but placed on a wait list. In
+          the mean time I took a few classes on udemy just to make sure that
+          software development was a proper fit for me and to my surprise I
+          loved it. January rolled around and I was able to start my classesat
+          Bow Valley. This brings us to now where I am now entering my 3rd
+          termand looking for an internship or some sort of part time jobin the
+          software development.
+        </p>
+      </section>
     </main>
 
     <footer>
-        <div class="coloum">
-            <h3>Contact Info</h3>
-            <p>E Mail: <a href="mailto:pmacdonald15@gmail.com">pmacdonald15@gmail.com</a></p>
-            <p><a href="mailto:p.macdonald038@mybvc.ca">p.macdonald038@mybvc.ca</a></p>
-            <p>Phone: 403-975-5053</p>
-        </div>
+      <div class="coloum">
+        <h3>Contact Info</h3>
+        <p>
+          E Mail:
+          <a href="mailto:pmacdonald15@gmail.com">pmacdonald15@gmail.com</a>
+        </p>
+        <p>
+          <a href="mailto:p.macdonald038@mybvc.ca">p.macdonald038@mybvc.ca</a>
+        </p>
+        <p>Phone: 403-975-5053</p>
+      </div>
 
-        <div class="coloum">
-            <h3>Links</h3>            
-            <p>
-                <a href="https://www.linkedin.com/in/patrick-macdonald-231640285/">
-                    <img src="./images/linkedin.png" alt="Linked In Profile" class="linkIcon">
-                </a>
-            </p>
-            <p>
-                <a href="https://github.com/Pmacdon15?tab=repositories">
-                    <img src="./images/gHub.png" alt="GitHub Profile" class="linkIcon">
-                </a>
-            </p>            
-            <p><a href="http://www.patchat.ca">PatChat.ca</a></p>
-        </div>
+      <div class="coloum">
+        <h3>Links</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/patrick-macdonald-231640285/">
+            <img
+              src="./images/linkedin.png"
+              alt="Linked In Profile"
+              class="linkIcon"
+            />
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/Pmacdon15?tab=repositories">
+            <img
+              src="./images/gHub.png"
+              alt="GitHub Profile"
+              class="linkIcon"
+            />
+          </a>
+        </p>
+        <p><a href="http://www.patchat.ca">PatChat.ca</a></p>
+      </div>
 
-        <div class="coloum">
-            <h3>Address</h3>
-            <p>City: Calgary</p>
-            <p>Province: Alberta</p>
-            <p>Country: Canada</p>
-        </div>
-    </footer> 
-</body>
-
+      <div class="coloum">
+        <h3>Address</h3>
+        <p>City: Calgary</p>
+        <p>Province: Alberta</p>
+        <p>Country: Canada</p>
+      </div>
+    </footer>
+  </body>
 </html>
