@@ -243,11 +243,11 @@ footer p {
         text-indent: 5%;
     }
 
-    .colum>p {
+    .column>p {
         text-indent: 0%;
     }
 
-    footer .colum:nth-child(3) {
+    footer .column:nth-child(3) {
         display: none;
 
     }
