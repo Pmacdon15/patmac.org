@@ -85,52 +85,120 @@
     </nav>
     <main>
       <section>
+        <h2>PatGPT</h2>
+        <img class="displayImg" alt="PatGPT" src="../images/patGPT.png" />
+        <p>
+          PatGPT is an Android app that I developed using Java and XML. It
+          serves as both a chat and image generator application, leveraging the
+          power of the GPT-3 Turbo and DALL-E-3 models. Currently, it's a work
+          in progress, serving as the final assignment for my mobile app
+          development class. While I'm satisfied with the app's overall layout
+          and functionality, there are several enhancements I plan to implement.
+          These include enabling users to share images directly instead of just
+          links, facilitating text sharing, incorporating a history feature, and
+          integrating an SQLite database for improved data management.
+        </p>
+        <p>
+          I'm thrilled with the outcome of the app and eager to enhance its
+          capabilities further. Additionally, I'm excited about expanding my
+          knowledge of Android app development, delving deeper into the
+          functionalities of GPT-3 and DALL-E-3 models, and mastering the
+          intricacies of Android Studio and the Android operating system.
+          <br />
+
+          Upcoming features include:
+        </p>
+
+        <ul>
+          <li>Ability to directly share and save photos</li>
+          <li>Text sharing functionality, possibly in a file format</li>
+          <li>Prompts displayed above responses</li>
+          <li>
+            History of responses, potentially accessible during navigation
+          </li>
+          <li>
+            Customizable profile picture and settings reflected in the app,
+            particularly in the navigation menu
+          </li>
+          <li>Implementation of SQLite database functionality</li>
+        </ul>
+
+        <p>
+          GitHub Repository:
+          <a href="https://github.com/Pmacdon15/PatGPT"
+            ><u>github.com/Pmacdon15/PatGPT</u></a
+          >
+        </p>
+        <p>
+          Feel free to download the app from the releases page on
+          <a href="https://github.com/Pmacdon15/PatGPT/releases"
+            ><u>github.com/Pmacdon15/PatGPT/releases</u></a
+          >
+        </p>
+      </section>
+
+      <section>
         <h2>www.patchat.ca</h2>
         <img class="displayImg" alt="patchat" src="../images/patchat.png" />
         <p>
           PatChat is a web app that I made for fun. The website<a
             href="http://www.patchat.ca"
-            >PatChat.ca</a
           >
-          is a chatroom, that I host on my Ubuntu server on my Raspberry Pi 4. I
-          used Express and Socket.io to make the chatroom. I used pm2 to run the
-          server in the background. I used apache and virtual host point to the
-          desired port. Apache all handles my SSL certificate. I used Certbot to
-          get the SSL certificate. I also used port forwarding to point all
-          traffic on my ip address ports 80 and 443 to my Raspberry Pi and
-          Apache does the rest.
+            www.PatChat.ca</a
+          >
         </p>
 
         <p>
-          Creating the chat room seemed to go well after I found a video
-          breaking it down to its simplest components. Another layer of
-          complexity was added when I allowed Apache to handle my ssl
-          certificates as opposed to setting up the express server as an HTTPS
-          server to begin with. I was able to get the site to work properly
-          allowing Apache to handle the SSL certificates although this method
-          does generate one console error on the client side due to a connection
-          failing at first. If you run it as an http server the error is gone.
-          Either way this does not affect the functionality of the chat room and
-          I am proud of the product I've produced.
+          Creating and hosting the chatroom on my Ubuntu server, powered by my
+          Raspberry Pi 4, was a rewarding endeavor. Leveraging Express and
+          Socket.io, I crafted the chatroom's functionality, ensuring seamless
+          communication among users. To manage the server efficiently, I
+          employed pm2 to run it in the background, optimizing performance and
+          stability.
+        </p>
+        <p>
+          In configuring the server, I utilized Apache and virtual host settings
+          to direct traffic to the desired port, streamlining accessibility.
+          Handling SSL certification was crucial for security, and Apache
+          efficiently managed this aspect. Certbot facilitated the acquisition
+          of SSL certificates, enhancing the chatroom's security measures.
+        </p>
+        <p>
+          While setting up the chatroom, I encountered some challenges that
+          ultimately enriched my learning experience. Relying on Apache to
+          handle SSL certificates introduced an additional layer of complexity,
+          deviating from the conventional approach of configuring Express as an
+          HTTPS server from the outset. Despite encountering a minor console
+          error initially, related to connection failures, this did not impede
+          the chatroom's functionality. Whether operating as an HTTP or HTTPS
+          server, the chatroom performed flawlessly, a testament to the
+          robustness of the solution.
+        </p>
+
+        <p>
+          Reflecting on the journey, I take pride in the chatroom's development
+          and functionality, grateful for the knowledge gained and challenges
+          overcome in the process
         </p>
       </section>
       <section>
         <h2>Todo App</h2>
         <img class="displayImg" alt="Todo App" src="../images/Todo.png" />
         <p>
-          This is a todo app I made using Java Script, Express, Node.js, JWT,
-          and My Sql.The apis are protected through user authorization possible
-          by JWT and cookies. The user can create an account and login. The user
-          can create, read, update, and delete todos. There is a sign up page
-          for new users.
+          I developed a todo app using JavaScript, Express, Node.js, JWT, and
+          MySQL. The APIs are secured through user authorization facilitated by
+          JWT and cookies. Users can create an account, log in, and perform CRUD
+          operations on todos. Additionally, the app features a signup page for
+          new users.
         </p>
         <p>
-          This was a fun project to make. I learned a lot about user
-          authorization and how to protect apis. I also learned how to use JWT
-          and cookies to protect apis. I got to further my knowledge of Express
-          and also learn My Sql. I am looking forward to learning more about in
-          the future.
+          Crafting this project was both enjoyable and enlightening. It provided
+          me with valuable insights into user authentication and API protection
+          using JWT and cookies. Furthermore, I deepened my understanding of
+          Express and gained proficiency in MySQL. I eagerly anticipate
+          furthering my expertise in these areas in the future.
         </p>
+
         <p>
           You can find the code for this project on my GitHub @
           <a href="https://github.com/Pmacdon15/todo"
@@ -142,17 +210,35 @@
       <section>
         <h2>Shenanigans MacServer Face</h2>
         <p>
-          This is a server I made for the O.MG cable. It is a server that allows
-          you to run PowerShell scripts on a targets computer easily using an
-          O.MG cable, ALOA, or any number of HID injection devices. The server
-          allows for storage of scripts and captured files or information. I
-          have two versions of a base script one for Ducky script(for the O.MG
-          cable) and the other HID Script (for the ALOA). By changing one word
-          in the base script I can launch any number of scripts stored on the server.
-          The Repository is located at <a href="https://github.com/Pmacdon15/ShenanigansMacServerFace"
-          >https://github.com/Pmacdon15/ShenanigansMacServerFace</a
-        >
-
+          This server serves as a central hub for conducting HID (Human
+          Interface Device) attacks, primarily designed for use with the O.MG
+          cable. Seamlessly interfacing with devices like the O.MG cable, ALOA,
+          and other HID injection tools, it facilitates effortless execution of
+          PowerShell and Bash scripts on target systems.
+        </p>
+        <p>
+          One of its key features is the extensive library of scripts, ranging
+          from utilitarian tasks like extracting WiFi passwords and mapping
+          files to more whimsical ones such as triggering a Rick Roll or
+          simulating a fake ransomware attack. Leveraging Ducky trigger scripts,
+          users gain access to a plethora of functionalities housed within the
+          server.
+        </p>
+        <p>
+          Moreover, the server provides robust storage capabilities for scripts
+          and captured data, ensuring seamless operation and management. With
+          dual versions of base scripts tailored for Ducky and HID devices,
+          users can effortlessly initiate any script stored on the server with a
+          simple modification.
+        </p>
+        <p>
+          In essence, this server empowers users to execute a diverse array of
+          actions on target systems, from practical data extraction to
+          light-hearted pranks, all while maintaining ease of use and
+          flexibility. The Repository is located at
+          <a href="https://github.com/Pmacdon15/ShenanigansMacServerFace"
+            >https://github.com/Pmacdon15/ShenanigansMacServerFace</a
+          >
         </p>
       </section>
 
