@@ -84,6 +84,7 @@ section {
 }
 .content{
     display: flex;
+    /* flex-direction: column; */
 }
 /* .contentVertical{
     display: flex;
@@ -275,4 +276,11 @@ footer p {
         margin-right: auto;
         padding: 2%;
     }
+}
+
+@media only screen and  (max-width: 700px){
+    .content{
+        flex-direction: column;
+    }
+    
 }
