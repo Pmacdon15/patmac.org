@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patrick MacDonald</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../css/stylesheet.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Projects</h1>
-    </header>
-    <!-- <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick MacDonald</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/stylesheet.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Projects</h1>
+  </header>
+  <!-- <nav>
       <a href="../index.html">Profile Page</a>
       <a href="../html/projects.html">Projects</a>
       <a href="../html/resume.html">Resume</a>
@@ -40,416 +32,427 @@
       <a href="../html/hobbies.html">Hobbies</a>
       <a href="http://www.patchat.ca">PatChat.ca</a>
     </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Profile</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./projects.html"
-              >Projects
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./transcript.html">Transcript</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./certificates.html">Certificates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./hobbies.html">Hobbies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://www.patchat.ca">PatChat.ca</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <section>
-        <h2>PatGPT</h2>
-        <img class="displayImg" alt="PatGPT" src="../images/PatGPT.png" />
-        <p>
-          PatGPT is an Android app that I developed using Java and XML. It
-          serves as both a chat and image generator application, leveraging the
-          power of the GPT-3 Turbo and DALL-E-3 models. Currently, it's a work
-          in progress, serving as the final assignment for my mobile app
-          development class. While I'm satisfied with the app's overall layout
-          and functionality, there are several enhancements I plan to implement.
-          These include enabling users to share images directly instead of just
-          links, facilitating text sharing, incorporating a history feature, and
-          integrating an SQLite database for improved data management.
-        </p>
-        <p>
-          I'm thrilled with the outcome of the app and eager to enhance its
-          capabilities further. Additionally, I'm excited about expanding my
-          knowledge of Android app development, delving deeper into the
-          functionalities of GPT-3 and DALL-E-3 models, and mastering the
-          intricacies of Android Studio and the Android operating system.
-          <br />
-
-          Upcoming features include:
-        </p>
-
-        <ul>
-          <li>Ability to directly share and save photos</li>
-          <li>Text sharing functionality, possibly in a file format</li>
-          <li>Prompts displayed above responses</li>
-          <li>
-            History of responses, potentially accessible during navigation
-          </li>
-          <li>
-            Customizable profile picture and settings reflected in the app,
-            particularly in the navigation menu
-          </li>
-          <li>Implementation of SQLite database functionality</li>
-        </ul>
-
-        <p>
-          GitHub Repository:
-          <a href="https://github.com/Pmacdon15/PatGPT"
-            ><u>github.com/Pmacdon15/PatGPT</u></a
-          >
-        </p>
-        <p>
-          Feel free to download the app from the releases page on
-          <a href="https://github.com/Pmacdon15/PatGPT/releases"
-            ><u>github.com/Pmacdon15/PatGPT/releases</u></a
-          >
-        </p>
-      </section>
-      <section>
-        <h2>Guess The Celebrity Game</h2>
-        <img
-          class="displayImg"
-          alt="Guess The Celebrity"
-          src="../images/guessingGame.png"
-        />
-        <p>
-          I developed 'Guess The Celebrity Game' using Java within Android
-          Studio, aiming to create an entertaining and interactive experience
-          for users. This project served as a pivotal learning opportunity,
-          allowing me to delve deeper into Android Studio, Java programming, and
-          the Android operating system. Throughout the development process, I
-          acquired a comprehensive understanding of essential concepts such as
-          saving and restoring state, as well as exploring various built-in
-          functions that can be overridden to customize app behavior.
-        </p>
-        <p>
-          One of the significant aspects of this project was mastering the
-          Android lifecycle, which enabled me to efficiently manage the state of
-          the application and ensure a seamless user experience. Implementing
-          features like saving and restoring state not only enhanced the game
-          play but also enriched my skill set as a developer. Additionally, this
-          project provided valuable insights into Object-Oriented Programming
-          (OOP) principles, allowing me to optimize code structure and
-          maintainability
-        </p>
-        <p>
-          If you would like to try a release of the game, you can download it
-          from the projects git up <a href="https://github.com/Pmacdon15/Guess-The-Celebrity-Game"><u>page.</u></a>
-        </p>
-      </section>
-
-      <section>
-        <h2>www.patchat.ca</h2>
-        <img class="displayImg" alt="patchat" src="../images/patchat.png" />
-        <p>
-          PatChat is a web app that I made for fun. The website<a
-            href="http://www.patchat.ca"
-          >
-            www.PatChat.ca</a
-          >
-        </p>
-
-        <p>
-          Creating and hosting the chatroom on my Ubuntu server, powered by my
-          Raspberry Pi 4, was a rewarding endeavor. Leveraging Express and
-          Socket.io, I crafted the chatroom's functionality, ensuring seamless
-          communication among users. To manage the server efficiently, I
-          employed pm2 to run it in the background, optimizing performance and
-          stability.
-        </p>
-        <p>
-          In configuring the server, I utilized Apache and virtual host settings
-          to direct traffic to the desired port, streamlining accessibility.
-          Handling SSL certification was crucial for security, and Apache
-          efficiently managed this aspect. Certbot facilitated the acquisition
-          of SSL certificates, enhancing the chatroom's security measures.
-        </p>
-        <p>
-          While setting up the chatroom, I encountered some challenges that
-          ultimately enriched my learning experience. Relying on Apache to
-          handle SSL certificates introduced an additional layer of complexity,
-          deviating from the conventional approach of configuring Express as an
-          HTTPS server from the outset. Despite encountering a minor console
-          error initially, related to connection failures, this did not impede
-          the chatroom's functionality. Whether operating as an HTTP or HTTPS
-          server, the chatroom performed flawlessly, a testament to the
-          robustness of the solution.
-        </p>
-
-        <p>
-          Reflecting on the journey, I take pride in the chatroom's development
-          and functionality, grateful for the knowledge gained and challenges
-          overcome in the process
-        </p>
-      </section>
-      <section>
-        <h2>Todo App</h2>
-        <img class="displayImg" alt="Todo App" src="../images/Todo.png" />
-        <p>
-          I developed a todo app using JavaScript, Express, Node.js, JWT, and
-          MySQL. The APIs are secured through user authorization facilitated by
-          JWT and cookies. Users can create an account, log in, and perform CRUD
-          operations on todos. Additionally, the app features a signup page for
-          new users.
-        </p>
-        <p>
-          Crafting this project was both enjoyable and enlightening. It provided
-          me with valuable insights into user authentication and API protection
-          using JWT and cookies. Furthermore, I deepened my understanding of
-          Express and gained proficiency in MySQL. I eagerly anticipate
-          furthering my expertise in these areas in the future.
-        </p>
-
-        <p>
-          You can find the code for this project on my GitHub @
-          <a href="https://github.com/Pmacdon15/todo"
-            ><u>https://github.com/Pmacdon15/todo</u></a
-          >
-        </p>
-      </section>
-
-      <section>
-        <h2>Shenanigans MacServer Face</h2>
-        <p>
-          This server serves as a central hub for conducting HID (Human
-          Interface Device) attacks, primarily designed for use with the O.MG
-          cable. Seamlessly interfacing with devices like the O.MG cable, ALOA,
-          and other HID injection tools, it facilitates effortless execution of
-          PowerShell and Bash scripts on target systems.
-        </p>
-        <p>
-          One of its key features is the extensive library of scripts, ranging
-          from utilitarian tasks like extracting WiFi passwords and mapping
-          files to more whimsical ones such as triggering a Rick Roll or
-          simulating a fake ransomware attack. Leveraging Ducky trigger scripts,
-          users gain access to a plethora of functionalities housed within the
-          server.
-        </p>
-        <p>
-          Moreover, the server provides robust storage capabilities for scripts
-          and captured data, ensuring seamless operation and management. With
-          dual versions of base scripts tailored for Ducky and HID devices,
-          users can effortlessly initiate any script stored on the server with a
-          simple modification.
-        </p>
-        <p>
-          In essence, this server empowers users to execute a diverse array of
-          actions on target systems, from practical data extraction to
-          light-hearted pranks, all while maintaining ease of use and
-          flexibility. The Repository is located at
-          <a href="https://github.com/Pmacdon15/ShenanigansMacServerFace"
-            >https://github.com/Pmacdon15/ShenanigansMacServerFace</a
-          >
-        </p>
-      </section>
-
-      <section>
-        <h2>O.MG Cable</h2>
-        <img class="displayImg" alt="O.MG Cable" src="../images/omg.jpg" />
-        <p>
-          The O.MG Cable is a malicious USB cable that can be used to inject key
-          strokes into a target's computer. It has a web interface that allows
-          you to control the device. It is a very powerful tool that can be used
-          for HID injection. Paired with a Server I made for
-          <a href="https://github.com/Pmacdon15/ShenanigansMacServerFace"
-            >Shenanigans Mac Server Face</a
-          >
-          I am able to launch any number of PowerShell scripts by changing one
-          word on my ducky script. Anything that can be done on PowerShell can
-          be done with this device. I am very impressed with the power of this
-          device. Any thing from a rick roll, mapping and Extracting files, to
-          obtaining the wifi password a clipboard sniffer. The O.MG cable also
-          acts as a key logger as well. There are features I want to learn
-          allowing the O.MG cable to be connected remotely I am looking forward
-          to learning more about it.
-        </p>
-      </section>
-      <section>
-        <h2>ALOA(A Little Offensive Appliance)</h2>
-        <img class="displayImg" alt="raspberry-pi" src="../images/aloa.jpg" />
-        <p>
-          P4wnP1 A.L.O.A. by MaMe82 is a framework which turns a Raspberry Pi
-          Zero W into a flexible, low-cost platform for Pentesting, red teaming
-          and physical engagements ... or into "A Little Offensive Appliance".
-          It's main super power is the ability To mimic an HID device AKA inject
-          keystrokes and mouse movements into a computer. Also it is able to
-          emulate a mass storage device. When used with the HID injection you
-          are able to launch any number of exes you have preloaded onto the
-          device. I can not overstate the power of HID injections, After opening
-          a terminal on a computer you can do anything you want.
-        </p>
-        <p>
-          This project has made me aware of so many vulnerabilities most
-          personal computers. I'm very interested in cyber security and would
-          love to use this device to further my education on the subject. At the
-          very least it is a fun educational toy/tool. At about $40 to get
-          started, I found it an affordable way to learn about vulnerabilities
-          in personal computers.
-          <br /><br />If you are interested follow this link to the GitHub
-          repository
-          <a href="https://github.com/RoganDawes/P4wnP1_aloa"><u>page.</u></a>
-          <br />If you are interested in buying a Raspberry-Pi 0W please use
-          this <a href="https://amzn.to/3ONppvl"><u>Link.</u></a> <br />If you
-          are interested in buying a Raspberry-Pi 0W USB board please use this
-          <a href="https://amzn.to/3QOIgca"><u>Link.</u></a> <br />If you would
-          like to buy an sd card for your Raspberry-Pi please use this
-          <a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
-        </p>
-      </section>
-      <section>
-        <h2>Ubuntu Server as an OS for a Raspberry Pi 4</h2>
-        <img class="displayImg" alt="Ubuntu" src="../images/ubuntu.png" />
-        <p>
-          This allows me to have many directories with different types of
-          frameworks and servers such as Apache, Express, Python or Ruby. I also
-          get to experience Linux as an os well hosting any number of servers or
-          services. It will also help me learn the command line and how to use
-          it. I am looking forward to learning more about Linux and web servers.
-        </p>
-
-        <p>
-          Ubuntu server is very powerful and a great addition to any home
-          network especially if you want to self host many web services. I am
-          very impressed a Raspberry Pi 4 can run Ubuntu server and host
-          Multiple websites and applications at the same time.
-          <br /><br />If you are interested in setting up Ubuntu Server on a
-          Raspberry Pi follow this link to a guide<a
-            href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview"
-            ><u>page.</u></a
-          >
-          <br />If you are interested in buying a Raspberry-Pi 4 please use this
-          <a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a> <br />If you would
-          like to buy a case for your Raspberry-Pi 4 please use this
-          <a href="https://amzn.to/3OVIJqd"><u>Link.</u></a> <br />If you would
-          like to buy an sd card for your Raspberry-Pi 4 please use this
-          <a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
-        </p>
-      </section>
-      <section>
-        <h2>Kali Linux on a Raspberry Pi 4</h2>
-        <img class="displayImg" alt="Kali Linux" src="../images/Kali.png" />
-        <p>
-          Kali Linux is a Debian based Linux distribution that is used for
-          penetration testing. It is maintained and funded by Offensive Security
-          Ltd. a lot of the features have been patched, and security features
-          have been added to prevent some of the attacks. There is a lot that
-          does work and is super neat. I have plenty more to go through and
-          learn. One thing I have learned is have strong passwords and use a
-          password manager so you can have even stronger passwords. I have also
-          learned that there are many vulnerabilities in personal computers and
-          something as simple as clicking on a link could open your computer or
-          phone up to an attacker.
-        </p>
-        <p>
-          Im glad there is a low cost platform like the Raspberry Pi 4 to Kali
-          and other Linux OS's. After my experience with Kali I may even take
-          the post diploma program at Bow Valley College after I finish my
-          current program software development.
-          <br /><br />If you are interested in setting up Kali Linux on a
-          Raspberry Pi follow this link to a guide<a
-            href="https://www.kali.org/docs/arm/raspberry-pi-4/"
-            ><u>page.</u></a
-          >
-          <br />You can download Kali Linux from this
-          <a href="https://www.kali.org/get-kali/#kali-arm"><u>page.</u></a>
-          <br />If you are interested in buying a Raspberry-Pi 4 please use this
-          <a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a> <br />If you would
-          like to buy a case for your Raspberry-Pi 4 please use this
-          <a href="https://amzn.to/3OVIJqd"><u>Link.</u></a> <br />If you would
-          like to buy an sd card for your Raspberry-Pi 4 please use this
-          <a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
-        </p>
-      </section>
-      <section>
-        <h2>Apache 2 Web Server</h2>
-        <img class="displayImg" alt="Apache" src="../images/apache.png" />
-        <p>
-          This website is hosted on Apache on a Raspberry Pi 4 right now. This
-          was a fun project and quick to set up. What I like about Apache is
-          that it is able to act as a reverse proxy. Basically you set up a file
-          called a virtual host and point it to the desired port. Then you set
-          up port forwarding on your router to point to the ip address. Using
-          this method not only can I serve websites from citrin directories but
-          I can also serve different websites from different ports. Allowing me
-          to host as many different types of servers, but also frameworks.
-          Apache is such a powerful tool when it comes to web hosting. I am
-          looking forward to learning more about Apache and web servers.
-        </p>
-      </section>
-    </main>
-    <footer>
-      <div class="column">
-        <h3>Contact Info</h3>
-        <p>
-          E Mail:
-          <a href="mailto:pmacdonald15@gmail.com">pmacdonald15@gmail.com</a>
-        </p>
-        <p>
-          <a href="mailto:p.macdonald038@mybvc.ca">p.macdonald038@mybvc.ca</a>
-        </p>
-        <p>Phone: 403-975-5053</p>
-      </div>
-
-      <div class="column">
-        <h3>Links</h3>
-        <p>
-          <a href="https://www.linkedin.com/in/patrick-macdonald-231640285/">
-            <img
-              src="../images/linkedin.png"
-              alt="Linked In Profile"
-              class="linkIcon"
-            />
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Profile</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./projects.html">Projects
+            <span class="sr-only">(current)</span>
           </a>
-        </p>
-        <p>
-          <a href="https://github.com/Pmacdon15?tab=repositories">
-            <img
-              src="../images/gHub.png"
-              alt="GitHub Profile"
-              class="linkIcon"
-            />
-          </a>
-        </p>
-        <p><a href="http://www.patchat.ca">PatChat.ca</a></p>
-      </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./transcript.html">Transcript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./certificates.html">Certificates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./hobbies.html">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.patchat.ca">PatChat.ca</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <h2>Pat's Pre-trips</h2>
+      <div class="content">
+        <img class="displayImgLong" alt="Pat's Pre-trips" src="../images/PreTrips.jpg" />
+        <div>
+          <p>
+            Pat's Pre-trips is a web app that I developed using Type Script, Nextjs, Mui and Auth Kit. It is a pre-trip
+            inspection app
+            that allows users to create an account, log in, and perform inspections and list on route defects. The app
+            features Auth Kit by Work OS for signup page and sign in as well as backend authentication. Additionally,
+            the
+            app includes a current trips and past trips page. The app is designed to be user-friendly and intuitive,
+            providing a seamless experience for users. I am proud of the outcome of this project and look forward to
+            further enhancing its capabilities in the future.
+          </p>
+          <p>
+            Current features include:<br />
+          <ul>
+            <li>Google OAuth Login</li>
+            <li>Microsoft OAuth Login</li>
+            <li>Github OAuth Login </li>
+            <li>Show current Trips</li>
+            <li>Show past trips</li>
+            <li>Perform inspections</li>
+            <li>List on route defects</li>
 
-      <div class="column">
-        <h3>Address</h3>
-        <p>City: Calgary</p>
-        <p>Province: Alberta</p>
-        <p>Country: Canada</p>
+          </ul>
+          </p>
+          <p>
+            GitHub Repository:
+            <a href="https://www.github.com/Pmacdon15/PreTrips"><u>github.com/Pmacdon15/PreTrips</u></a>
+          </p>
+          <p>
+            Feel free to try the app at
+            <a href="https://pretrips.vercel.app/"><u>pats-pretrips.vercel.app</u></a>
+          </p>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section>
+      <h2>PatGPT</h2>
+      <div class="content">
+        <img class="displayImgLong" alt="PatGPT" src="../images/PatGPT.png" />
+        <div>
+          <p>
+            PatGPT is an Android app that I developed using Java and XML. It
+            serves as both a chat and image generator application, leveraging the
+            power of the GPT-3 Turbo and DALL-E-3 models. Currently, it's a work
+            in progress, serving as the final assignment for my mobile app
+            development class. While I'm satisfied with the app's overall layout
+            and functionality, there are several enhancements I plan to implement.
+            These include enabling users to share images directly instead of just
+            links, facilitating text sharing, incorporating a history feature, and
+            integrating an SQLite database for improved data management.
+          </p>
+          <p>
+            I'm thrilled with the outcome of the app and eager to enhance its
+            capabilities further. Additionally, I'm excited about expanding my
+            knowledge of Android app development, delving deeper into the
+            functionalities of GPT-3 and DALL-E-3 models, and mastering the
+            intricacies of Android Studio and the Android operating system.
+            <br />
+
+            Upcoming features include:
+          </p>
+
+          <ul>
+            <li>Ability to directly share and save photos</li>
+            <li>Text sharing functionality, possibly in a file format</li>
+            <li>Prompts displayed above responses</li>
+            <li>
+              History of responses, potentially accessible during navigation
+            </li>
+            <li>
+              Customizable profile picture and settings reflected in the app,
+              particularly in the navigation menu
+            </li>
+            <li>Implementation of SQLite database functionality</li>
+          </ul>
+
+          <p>
+            GitHub Repository:
+            <a href="https://github.com/Pmacdon15/PatGPT"><u>github.com/Pmacdon15/PatGPT</u></a>
+          </p>
+          <p>
+            Feel free to download the app from the releases page on
+            <a href="https://github.com/Pmacdon15/PatGPT/releases"><u>github.com/Pmacdon15/PatGPT/releases</u></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Guess The Celebrity Game</h2>
+      <div class="content">
+        <img class="displayImgLong" alt="Guess The Celebrity" src="../images/guessingGame.png" />
+        <div>
+          <p>
+            I developed 'Guess The Celebrity Game' using Java within Android
+            Studio, aiming to create an entertaining and interactive experience
+            for users. This project served as a pivotal learning opportunity,
+            allowing me to delve deeper into Android Studio, Java programming, and
+            the Android operating system. Throughout the development process, I
+            acquired a comprehensive understanding of essential concepts such as
+            saving and restoring state, as well as exploring various built-in
+            functions that can be overridden to customize app behavior.
+          </p>
+          <p>
+            One of the significant aspects of this project was mastering the
+            Android lifecycle, which enabled me to efficiently manage the state of
+            the application and ensure a seamless user experience. Implementing
+            features like saving and restoring state not only enhanced the game
+            play but also enriched my skill set as a developer. Additionally, this
+            project provided valuable insights into Object-Oriented Programming
+            (OOP) principles, allowing me to optimize code structure and
+            maintainability
+          </p>
+          <p>
+            If you would like to try a release of the game, you can download it
+            from the projects git up <a href="https://github.com/Pmacdon15/Guess-The-Celebrity-Game"><u>page.</u></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>www.patchat.ca</h2>
+      <img class="displayImg" alt="patchat" src="../images/patchat.png" />
+      <p>
+        PatChat is a web app that I made for fun. The website<a href="http://www.patchat.ca">
+          www.PatChat.ca</a>
+      </p>
+
+      <p>
+        Creating and hosting the chatroom on my Ubuntu server, powered by my
+        Raspberry Pi 4, was a rewarding endeavor. Leveraging Express and
+        Socket.io, I crafted the chatroom's functionality, ensuring seamless
+        communication among users. To manage the server efficiently, I
+        employed pm2 to run it in the background, optimizing performance and
+        stability.
+      </p>
+      <p>
+        In configuring the server, I utilized Apache and virtual host settings
+        to direct traffic to the desired port, streamlining accessibility.
+        Handling SSL certification was crucial for security, and Apache
+        efficiently managed this aspect. Certbot facilitated the acquisition
+        of SSL certificates, enhancing the chatroom's security measures.
+      </p>
+      <p>
+        While setting up the chatroom, I encountered some challenges that
+        ultimately enriched my learning experience. Relying on Apache to
+        handle SSL certificates introduced an additional layer of complexity,
+        deviating from the conventional approach of configuring Express as an
+        HTTPS server from the outset. Despite encountering a minor console
+        error initially, related to connection failures, this did not impede
+        the chatroom's functionality. Whether operating as an HTTP or HTTPS
+        server, the chatroom performed flawlessly, a testament to the
+        robustness of the solution.
+      </p>
+
+      <p>
+        Reflecting on the journey, I take pride in the chatroom's development
+        and functionality, grateful for the knowledge gained and challenges
+        overcome in the process
+      </p>
+    </section>
+    <section>
+      <h2>Todo App</h2>
+      <img class="displayImg" alt="Todo App" src="../images/Todo.png" />
+      <p>
+        I developed a todo app using JavaScript, Express, Node.js, JWT, and
+        MySQL. The APIs are secured through user authorization facilitated by
+        JWT and cookies. Users can create an account, log in, and perform CRUD
+        operations on todos. Additionally, the app features a signup page for
+        new users.
+      </p>
+      <p>
+        Crafting this project was both enjoyable and enlightening. It provided
+        me with valuable insights into user authentication and API protection
+        using JWT and cookies. Furthermore, I deepened my understanding of
+        Express and gained proficiency in MySQL. I eagerly anticipate
+        furthering my expertise in these areas in the future.
+      </p>
+
+      <p>
+        You can find the code for this project on my GitHub @
+        <a href="https://github.com/Pmacdon15/todo"><u>https://github.com/Pmacdon15/todo</u></a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Shenanigans MacServer Face</h2>
+      <p>
+        This server serves as a central hub for conducting HID (Human
+        Interface Device) attacks, primarily designed for use with the O.MG
+        cable. Seamlessly interfacing with devices like the O.MG cable, ALOA,
+        and other HID injection tools, it facilitates effortless execution of
+        PowerShell and Bash scripts on target systems.
+      </p>
+      <p>
+        One of its key features is the extensive library of scripts, ranging
+        from utilitarian tasks like extracting WiFi passwords and mapping
+        files to more whimsical ones such as triggering a Rick Roll or
+        simulating a fake ransomware attack. Leveraging Ducky trigger scripts,
+        users gain access to a plethora of functionalities housed within the
+        server.
+      </p>
+      <p>
+        Moreover, the server provides robust storage capabilities for scripts
+        and captured data, ensuring seamless operation and management. With
+        dual versions of base scripts tailored for Ducky and HID devices,
+        users can effortlessly initiate any script stored on the server with a
+        simple modification.
+      </p>
+      <p>
+        In essence, this server empowers users to execute a diverse array of
+        actions on target systems, from practical data extraction to
+        light-hearted pranks, all while maintaining ease of use and
+        flexibility. The Repository is located at
+        <a
+          href="https://github.com/Pmacdon15/ShenanigansMacServerFace">https://github.com/Pmacdon15/ShenanigansMacServerFace</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>O.MG Cable</h2>
+      <img class="displayImg" alt="O.MG Cable" src="../images/omg.jpg" />
+      <p>
+        The O.MG Cable is a malicious USB cable that can be used to inject key
+        strokes into a target's computer. It has a web interface that allows
+        you to control the device. It is a very powerful tool that can be used
+        for HID injection. Paired with a Server I made for
+        <a href="https://github.com/Pmacdon15/ShenanigansMacServerFace">Shenanigans Mac Server Face</a>
+        I am able to launch any number of PowerShell scripts by changing one
+        word on my ducky script. Anything that can be done on PowerShell can
+        be done with this device. I am very impressed with the power of this
+        device. Any thing from a rick roll, mapping and Extracting files, to
+        obtaining the wifi password a clipboard sniffer. The O.MG cable also
+        acts as a key logger as well. There are features I want to learn
+        allowing the O.MG cable to be connected remotely I am looking forward
+        to learning more about it.
+      </p>
+    </section>
+    <section>
+      <h2>ALOA(A Little Offensive Appliance)</h2>
+      <img class="displayImg" alt="raspberry-pi" src="../images/aloa.jpg" />
+      <p>
+        P4wnP1 A.L.O.A. by MaMe82 is a framework which turns a Raspberry Pi
+        Zero W into a flexible, low-cost platform for Pentesting, red teaming
+        and physical engagements ... or into "A Little Offensive Appliance".
+        It's main super power is the ability To mimic an HID device AKA inject
+        keystrokes and mouse movements into a computer. Also it is able to
+        emulate a mass storage device. When used with the HID injection you
+        are able to launch any number of exes you have preloaded onto the
+        device. I can not overstate the power of HID injections, After opening
+        a terminal on a computer you can do anything you want.
+      </p>
+      <p>
+        This project has made me aware of so many vulnerabilities most
+        personal computers. I'm very interested in cyber security and would
+        love to use this device to further my education on the subject. At the
+        very least it is a fun educational toy/tool. At about $40 to get
+        started, I found it an affordable way to learn about vulnerabilities
+        in personal computers.
+        <br /><br />If you are interested follow this link to the GitHub
+        repository
+        <a href="https://github.com/RoganDawes/P4wnP1_aloa"><u>page.</u></a>
+        <br />If you are interested in buying a Raspberry-Pi 0W please use
+        this <a href="https://amzn.to/3ONppvl"><u>Link.</u></a> <br />If you
+        are interested in buying a Raspberry-Pi 0W USB board please use this
+        <a href="https://amzn.to/3QOIgca"><u>Link.</u></a> <br />If you would
+        like to buy an sd card for your Raspberry-Pi please use this
+        <a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
+      </p>
+    </section>
+    <section>
+      <h2>Ubuntu Server as an OS for a Raspberry Pi 4</h2>
+      <img class="displayImg" alt="Ubuntu" src="../images/ubuntu.png" />
+      <p>
+        This allows me to have many directories with different types of
+        frameworks and servers such as Apache, Express, Python or Ruby. I also
+        get to experience Linux as an os well hosting any number of servers or
+        services. It will also help me learn the command line and how to use
+        it. I am looking forward to learning more about Linux and web servers.
+      </p>
+
+      <p>
+        Ubuntu server is very powerful and a great addition to any home
+        network especially if you want to self host many web services. I am
+        very impressed a Raspberry Pi 4 can run Ubuntu server and host
+        Multiple websites and applications at the same time.
+        <br /><br />If you are interested in setting up Ubuntu Server on a
+        Raspberry Pi follow this link to a guide<a
+          href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview"><u>page.</u></a>
+        <br />If you are interested in buying a Raspberry-Pi 4 please use this
+        <a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a> <br />If you would
+        like to buy a case for your Raspberry-Pi 4 please use this
+        <a href="https://amzn.to/3OVIJqd"><u>Link.</u></a> <br />If you would
+        like to buy an sd card for your Raspberry-Pi 4 please use this
+        <a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
+      </p>
+    </section>
+    <section>
+      <h2>Kali Linux on a Raspberry Pi 4</h2>
+      <img class="displayImg" alt="Kali Linux" src="../images/Kali.png" />
+      <p>
+        Kali Linux is a Debian based Linux distribution that is used for
+        penetration testing. It is maintained and funded by Offensive Security
+        Ltd. a lot of the features have been patched, and security features
+        have been added to prevent some of the attacks. There is a lot that
+        does work and is super neat. I have plenty more to go through and
+        learn. One thing I have learned is have strong passwords and use a
+        password manager so you can have even stronger passwords. I have also
+        learned that there are many vulnerabilities in personal computers and
+        something as simple as clicking on a link could open your computer or
+        phone up to an attacker.
+      </p>
+      <p>
+        Im glad there is a low cost platform like the Raspberry Pi 4 to Kali
+        and other Linux OS's. After my experience with Kali I may even take
+        the post diploma program at Bow Valley College after I finish my
+        current program software development.
+        <br /><br />If you are interested in setting up Kali Linux on a
+        Raspberry Pi follow this link to a guide<a href="https://www.kali.org/docs/arm/raspberry-pi-4/"><u>page.</u></a>
+        <br />You can download Kali Linux from this
+        <a href="https://www.kali.org/get-kali/#kali-arm"><u>page.</u></a>
+        <br />If you are interested in buying a Raspberry-Pi 4 please use this
+        <a href="https://amzn.to/3Eg1ks7"><u>Link.</u></a> <br />If you would
+        like to buy a case for your Raspberry-Pi 4 please use this
+        <a href="https://amzn.to/3OVIJqd"><u>Link.</u></a> <br />If you would
+        like to buy an sd card for your Raspberry-Pi 4 please use this
+        <a href="https://amzn.to/3qOwpju"><u>Link.</u></a>
+      </p>
+    </section>
+    <section>
+      <h2>Apache 2 Web Server</h2>
+      <img class="displayImg" alt="Apache" src="../images/apache.png" />
+      <p>
+        This website is hosted on Apache on a Raspberry Pi 4 right now. This
+        was a fun project and quick to set up. What I like about Apache is
+        that it is able to act as a reverse proxy. Basically you set up a file
+        called a virtual host and point it to the desired port. Then you set
+        up port forwarding on your router to point to the ip address. Using
+        this method not only can I serve websites from citrin directories but
+        I can also serve different websites from different ports. Allowing me
+        to host as many different types of servers, but also frameworks.
+        Apache is such a powerful tool when it comes to web hosting. I am
+        looking forward to learning more about Apache and web servers.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <div class="column">
+      <h3>Contact Info</h3>
+      <p>
+        E Mail:
+        <a href="mailto:pmacdonald15@gmail.com">pmacdonald15@gmail.com</a>
+      </p>
+      <p>
+        <a href="mailto:p.macdonald038@mybvc.ca">p.macdonald038@mybvc.ca</a>
+      </p>
+      <p>Phone: 403-975-5053</p>
+    </div>
+
+    <div class="column">
+      <h3>Links</h3>
+      <p>
+        <a href="https://www.linkedin.com/in/patrick-macdonald-231640285/">
+          <img src="../images/linkedin.png" alt="Linked In Profile" class="linkIcon" />
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/Pmacdon15?tab=repositories">
+          <img src="../images/gHub.png" alt="GitHub Profile" class="linkIcon" />
+        </a>
+      </p>
+      <p><a href="http://www.patchat.ca">PatChat.ca</a></p>
+    </div>
+
+    <div class="column">
+      <h3>Address</h3>
+      <p>City: Calgary</p>
+      <p>Province: Alberta</p>
+      <p>Country: Canada</p>
+    </div>
+  </footer>
+</body>
+
 </html>

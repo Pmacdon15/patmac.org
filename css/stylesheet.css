@@ -78,7 +78,16 @@ section {
     /* margin-bottom: 10px; */
     background-color: #c5d5cb;
     box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.302);
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
 }
+.content{
+    display: flex;
+}
+/* .contentVertical{
+    display: flex;
+} */
 img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -120,6 +129,13 @@ video {
     margin-right: 2%;
     width: 15%;
     height: auto;
+    border-radius: 5px;
+}
+.displayImgLong {
+    float: left;
+    margin-right: 2%;
+    width: max(20%,250px);
+    height: 400px;
     border-radius: 5px;
 }
 
